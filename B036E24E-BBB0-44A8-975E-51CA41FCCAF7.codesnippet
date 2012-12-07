@@ -3,23 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>eee</string>
+	<string>tip</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#className#&gt; ()
-
-@end</string>
+	<string>/*******
+  
+ &lt;#注释文字#&gt;
+ 
+ ********/
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>54D9DF77-2CC8-45E2-A893-4FDE784B649F</string>
+	<string>B036E24E-BBB0-44A8-975E-51CA41FCCAF7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Class extension interface-&gt;eee</string>
+	<string>添加注释-&gt;tip</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class extension interface</string>
+	<string>注释 tipForCode</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

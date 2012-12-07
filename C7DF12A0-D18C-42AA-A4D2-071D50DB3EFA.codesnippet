@@ -3,23 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>eee</string>
+	<string>document</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#className#&gt; ()
-
-@end</string>
+	<string>- (NSString *)filePath
+{
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+    NSString *path = [docPath stringByAppendingPathComponent:@"&lt;#fileName#&gt;"];
+    return path;
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>54D9DF77-2CC8-45E2-A893-4FDE784B649F</string>
+	<string>C7DF12A0-D18C-42AA-A4D2-071D50DB3EFA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Class extension interface-&gt;eee</string>
+	<string>document</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class extension interface</string>
+	<string>document 取得路径</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

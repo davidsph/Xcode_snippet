@@ -3,23 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>eee</string>
+	<string>winsize</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#className#&gt; ()
-
-@end</string>
+	<string> //取得屏幕尺寸
+    CGSize winSize = [[CCDirector sharedDirector] winSize];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>54D9DF77-2CC8-45E2-A893-4FDE784B649F</string>
+	<string>576F1BB9-EC81-4533-BCB0-19FC75B5BF2C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Class extension interface-&gt;eee</string>
+	<string>cocoa2d 取得屏幕尺寸</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class extension interface</string>
+	<string>winSize</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

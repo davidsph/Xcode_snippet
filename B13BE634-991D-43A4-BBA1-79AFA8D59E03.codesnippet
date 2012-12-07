@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>eee</string>
+	<string>ibaction</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#className#&gt; ()
-
-@end</string>
+	<string>- (IBAction)&lt;#selector#&gt;:(id)sender;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>54D9DF77-2CC8-45E2-A893-4FDE784B649F</string>
+	<string>B13BE634-991D-43A4-BBA1-79AFA8D59E03</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Class extension interface-&gt;eee</string>
+	<string>IBAction 快捷-&gt;ibaction</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class extension interface</string>
+	<string>IBAction 快捷</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

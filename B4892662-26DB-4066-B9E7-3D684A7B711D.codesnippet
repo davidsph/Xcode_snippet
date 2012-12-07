@@ -15,12 +15,12 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性声明_基本类型(aaa)</string>
+	<string>属性声明_基本类型-&gt;aaa</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Property_assign</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

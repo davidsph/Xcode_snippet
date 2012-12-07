@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>eee</string>
+	<string>fff</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#className#&gt; ()
-
-@end</string>
+	<string>NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>54D9DF77-2CC8-45E2-A893-4FDE784B649F</string>
+	<string>C7FB93B8-CDDA-4F3E-8913-D40DBC7BBB47</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Class extension interface-&gt;eee</string>
+	<string>调试的时候判断时候执行-&gt;fff</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class extension interface</string>
+	<string>调试 __FUNCTION</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

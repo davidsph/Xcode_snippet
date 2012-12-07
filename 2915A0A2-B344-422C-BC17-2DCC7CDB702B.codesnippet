@@ -3,23 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>eee</string>
+	<string>scale</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#className#&gt; ()
+	<string>CGAffineTransform  transform;
 
-@end</string>
+//有参照
+transform=CGAffineTransformScale(&lt;#someView#&gt;.transform, 1.2, 1.2);
+
+//无参照
+//transform=CGAffineTransformMakeScale(1.2, 1.2);
+//}
+[UIView beginAnimations:nil context:nil];
+[UIView setAnimationDuration:1.5];
+&lt;#someView#&gt;.transform=transform;
+//提交动画
+[UIView commitAnimations];
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>54D9DF77-2CC8-45E2-A893-4FDE784B649F</string>
+	<string>2915A0A2-B344-422C-BC17-2DCC7CDB702B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Class extension interface-&gt;eee</string>
+	<string>缩放-&gt;scale</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class extension interface</string>
+	<string>UIView动画 缩放效果</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

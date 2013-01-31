@@ -3,21 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>fff</string>
+	<string>bbb</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);</string>
+	<string> [UIQuickHelp setRoundCornerForView:self.thisView withRadius:View_CoureRadious];
+    
+    [UIQuickHelp setRoundCornerForView:self.thisView withRadius:View_CoureRadious];
+    
+    [UIQuickHelp setBorderForView:self.thisView withWidth:1 withColor:View_BorderColor];
+    
+    [self.thisView.layer setShadowColor:View_ShadowColor;
+     
+    [self.thisView.layer setShadowRadius:2];
+    [self.thisView.layer setShadowOffset:CGSizeMake(1, 3)];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C7FB93B8-CDDA-4F3E-8913-D40DBC7BBB47</string>
+	<string>0B2C36DA-6AB9-4917-AC70-2FDD11C2A4EE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>调试的时候判断时候执行-&gt;fff</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>调试 __FUNCTION -NSLog</string>
+	<string>设置圆角 边框 </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

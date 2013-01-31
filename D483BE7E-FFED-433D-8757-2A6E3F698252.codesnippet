@@ -9,15 +9,15 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);</string>
+	<string>CCLog(@"function %s line=%d",__FUNCTION__,__LINE__);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C7FB93B8-CDDA-4F3E-8913-D40DBC7BBB47</string>
+	<string>D483BE7E-FFED-433D-8757-2A6E3F698252</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>调试的时候判断时候执行-&gt;fff</string>
+	<string>cclog调用</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>调试 __FUNCTION -NSLog</string>
+	<string>调试时的快捷键 -CCLog</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

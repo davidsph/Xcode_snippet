@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>network</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CCLog(@"function %s line=%d",__FUNCTION__,__LINE__);
+
+
+__block NSMutableDictionary *messageDic = [[NSMutableDictionary alloc] init];
+
+__block NSString *message = nil;
+
+__block ASIFormDataRequest *formRequst = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:BASE_Domain_Name]];
+
+
+NSMutableDictionary *dic =[NSMutableDictionary dictionaryWithCapacity:10];
+
+[dic setObject:ZFT_app_key_Value forKey:KEY_app_key];
+
+[dic setObject:ZFT_version_Value forKey:KEY_version];
+
+[dic setObject:@"icardpay.app.user.reg.qry" forKey:KEY_service_type];
+
+[dic setObject:@"13161188683" forKey:@"mobile"];
+
+CREATE_POST_URL(dic, formRequst);
+
+
+[formRequst setCompletionBlock:^{
+    
+    //        NSData *data =[formRequst responseData];
+    
+    //        NSString *data = [formRequst responseString];
+    
+    //
+    //        NSStringEncoding encoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    //
+    //        NSString *temp = [[NSString alloc] initWithData:data encoding:encoding] ;
+    //
+    //
+    //        CCLog(@"网络返回的数据为：%@",temp);
+    //
+    //        NSError *error = nil;
+    //
+    //        NSDictionary *dic = [data objectFromJSONDataWithParseOptions:JKParseOptionLooseUnicode error:&amp;error];
+    
+    
+    
+    [formRequst setStringEncoding:NSUTF8StringEncoding];
+    
+    NSString *data = [formRequst responseString];
+    
+    CCLog(@"网络返回的数据为：%@",data);
+    
+    NSError *error = nil;
+    NSDictionary *dic = [data objectFromJSONStringWithParseOptions:JKParseOptionLooseUnicode error:&amp;error];
+    
+    if (!error) {
+        
+        CCLog(@"json解析格式正确");
+        
+        NSString *resultCode =[dic objectForKey:KEY_resultCode];
+        
+        message = [[dic objectForKey:KEY_message] URLDecodedString];
+        
+        NSLog(@"结果码为%@",resultCode);
+        
+        //            if ([resultCode isEqualToString:@""]) {
+        //                &lt;#statements#&gt;
+        //            }
+        
+        
+        NSLog(@"服务器返回的信息为：%@",message);
+        
+        if ([message length]==0) {
+            
+            //  NSLog(@"成功登陆后返回的数据：%@",data);
+            
+            
+            if (delegate&amp;&amp;[delegate respondsToSelector:@selector(requestDidFinishedWithRightMessage:)]) {
+                
+                [delegate requestDidFinishedWithRightMessage:messageDic];
+                
+            }
+            
+        } else{
+            
+            
+            if (delegate&amp;&amp;[delegate respondsToSelector:@selector(requestDidFinishedWithFalseMessage:)]){
+                
+                //message 长度不为0 有错误信息
+                [messageDic setObject:message forKey:KEY_message];
+                [delegate requestDidFinishedWithFalseMessage:messageDic];
+                
+            }
+            
+            
+        }
+        
+    } else{
+        NSLog(@"解析有错误");
+        
+        if (delegate&amp;&amp;[delegate respondsToSelector:@selector(requestDidFinishedWithFalseMessage:)]) {
+            
+            [messageDic setObject:WRONG_Message_NetWork forKey:KEY_message];
+            [delegate requestDidFinishedWithFalseMessage:messageDic];
+            
+            
+            
+        }
+        
+        
+        return ;
+        
+    }
+    
+    
+    
+}];
+
+[formRequst setFailedBlock:^{
+    
+    CCLog(@"失败 code = %d message = %@", [formRequst responseStatusCode], [formRequst responseStatusMessage]);
+    
+    SHOW_AlertViewWith_WrongNetWorkMessage;
+    
+    
+    //        [messageDic setObject:WRONG_Message_NetWork forKey:KEY_message];
+    //
+    //        if (delegate&amp;&amp;[delegate respondsToSelector:@selector(requestDidFailed:)]) {
+    //            [delegate requestDidFailed:messageDic];
+    //        }
+    
+}];
+
+[formRequst startAsynchronous];
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>98BCDCAD-FDBC-4E90-9F93-F702AF9A6986</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>支付通 network </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>支付通 network</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

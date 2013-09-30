@@ -3,21 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sss</string>
+	<string>touch</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,strong)&lt;#propertyType#&gt; *&lt;#propertyNmae#&gt;;</string>
+	<string>- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    [super touchesBegan:touches withEvent:event];
+   
+    
+}
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    [super touchesMoved:touches withEvent:event];
+   
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5FF2734D-C05C-4BC7-8DB0-12826966B205</string>
+	<string>F24D5777-35DD-4B10-83BC-73D55C5E11CB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>strong sss</string>
+	<string>快速书写 touch 时间 ---&gt;touch</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ARC 模式属性 ---》strong</string>
+	<string>touch began move</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

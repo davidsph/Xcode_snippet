@@ -3,31 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>hasfea</string>
+	<string>viewappear</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-#if __has_feature(objc_arc)
-#else
-
-- (void) dealloc{
-   
-  NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);
-  [super dealloc];
-     
+	<string>- (void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear: YES];
 }
-#endif</string>
+
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    
+}
+- (void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+    
+}
+
+- (void) viewDidDisappear:(BOOL)animated {
+    
+    [super viewDidDisappear: YES];
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>06DF43DC-22CA-46D2-924A-2B0D93AFE4FA</string>
+	<string>F400D0DE-6E2C-4E4C-B634-7956F0895BD6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>hasfea</string>
+	<string>快速设置 view出现和消失---&gt;viewappear</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>是否支持ARC</string>
+	<string>view appear disappear </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

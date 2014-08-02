@@ -9,10 +9,10 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (NSString *)filePath
+	<string>- (NSString *)getFilePath:(NSString *)fileName
 {
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
-    NSString *path = [docPath stringByAppendingPathComponent:@"&lt;#fileName#&gt;"];
+    NSString *path = [docPath stringByAppendingPathComponent:fileName];
     return path;
 }
 </string>

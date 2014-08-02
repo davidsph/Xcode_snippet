@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rrr</string>
+	<string>typedef</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,retain)&lt;#propertyType#&gt; *&lt;#propertyName#&gt;;</string>
+	<string>typedef NS_ENUM(&lt;#_type#&gt;, &lt;#_name#&gt;){
+    
+    
+    
+};</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6B188283-A8A9-4CD8-82C5-39D7F5749839</string>
+	<string>6DC413F9-898E-4CBE-AAFA-5523481E496C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性声明_指针类型-&gt;rrr</string>
+	<string>enum 实现 </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Property_retain</string>
+	<string>typedef enum </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

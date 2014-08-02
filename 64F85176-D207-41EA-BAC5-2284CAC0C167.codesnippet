@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>qqq</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDictionary *dic = @{&lt;#key#&gt;: &lt;#object, ...#&gt;};
+    
+[NSMutableDictionary getHttpResultWithUrlString:&lt;#urlString#&gt; params:dic requestType:REQUEST_GET_MEATHOD isAsync:YES onComplection:^(id result) {
+        
+        DJYBaseObjectModel *model = [[DJYBaseObjectModel alloc] initWithString:result error:nil];
+        
+        if (model) {
+            
+            if (model.State == 1) {
+                
+                success(nil);
+            } else{
+                
+                failed(model.Message);
+            }
+        } else{
+            failed(WrongMessageWhenRequestFailed);
+        }
+        
+    } onFailed:failed];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>64F85176-D207-41EA-BAC5-2284CAC0C167</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>网络快速请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>afnetwork help 请求</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

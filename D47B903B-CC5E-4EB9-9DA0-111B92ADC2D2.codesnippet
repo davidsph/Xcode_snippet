@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rrr</string>
+	<string>dismain</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,retain)&lt;#propertyType#&gt; *&lt;#propertyName#&gt;;</string>
+	<string>dispatch_async(dispatch_get_main_queue(), ^{
+    &lt;#code#&gt;
+        });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6B188283-A8A9-4CD8-82C5-39D7F5749839</string>
+	<string>D47B903B-CC5E-4EB9-9DA0-111B92ADC2D2</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性声明_指针类型-&gt;rrr</string>
+	<string>向主线程发送消息</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Property_retain</string>
+	<string>dispatch 主线程</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

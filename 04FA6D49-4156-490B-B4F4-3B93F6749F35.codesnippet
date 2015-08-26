@@ -3,21 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sss</string>
+	<string>viewlayout</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,strong)&lt;#propertyType#&gt; *&lt;#propertyNmae#&gt;;</string>
+	<string>- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5FF2734D-C05C-4BC7-8DB0-12826966B205</string>
+	<string>04FA6D49-4156-490B-B4F4-3B93F6749F35</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>strong sss</string>
+	<string>controller view layout callback </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ARC 模式属性 ---》strong</string>
+	<string>viewLayout</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

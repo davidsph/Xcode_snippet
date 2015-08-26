@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sss</string>
+	<string>fff</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,strong)&lt;#propertyType#&gt; *&lt;#propertyNmae#&gt;;</string>
+	<string>KSLog(@"function %s line=%d",__FUNCTION__,__LINE__);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5FF2734D-C05C-4BC7-8DB0-12826966B205</string>
+	<string>6B17FDAB-5AA6-438D-A295-860647C9F06F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>strong sss</string>
+	<string>调试的时候判断时候执行-&gt;fff</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ARC 模式属性 ---》strong</string>
+	<string>kslog</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

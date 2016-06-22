@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ccc</string>
+	<string>mas_make</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,copy)&lt;#propertyType#&gt; *&lt;#propertyNmae#&gt;;</string>
+	<string>[&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make){
+    &lt;#code#&gt;
+}];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>11DCEE55-8619-4548-B53D-445CC377FCD3</string>
+	<string>4A0A057B-8C17-43BB-BDBA-3A315A942EF8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>copy 属性  --&gt; ccc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>属性 copy </string>
+	<string>Masonry Constraint Make</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

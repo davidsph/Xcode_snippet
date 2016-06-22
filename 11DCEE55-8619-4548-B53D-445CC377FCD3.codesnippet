@@ -13,9 +13,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>11DCEE55-8619-4548-B53D-445CC377FCD3</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>copy 属性 </string>
+	<string>copy 属性  --&gt; ccc</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>属性 copy </string>
 	<key>IDECodeSnippetUserSnippet</key>

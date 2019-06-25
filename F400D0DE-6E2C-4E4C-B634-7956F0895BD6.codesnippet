@@ -9,24 +9,21 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void) viewWillAppear:(BOOL)animated{
-    [super viewWillAppear: YES];
+	<string>- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 
-- (void) viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:YES];
-    
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
-- (void) viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:YES];
-    
+
+- (void) viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 }
 
 - (void) viewDidDisappear:(BOOL)animated {
-    
-    [super viewDidDisappear: YES];
-}
-</string>
+    [super viewDidDisappear:animated];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F400D0DE-6E2C-4E4C-B634-7956F0895BD6</string>
 	<key>IDECodeSnippetLanguage</key>

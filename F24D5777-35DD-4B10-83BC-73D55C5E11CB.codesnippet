@@ -10,17 +10,25 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    
+    NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);
     [super touchesBegan:touches withEvent:event];
-   
-    
 }
 
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-    
+    NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);
     [super touchesMoved:touches withEvent:event];
-   
-    
+}
+
+- (void)touchesCancelled:(NSSet&lt;UITouch *&gt; *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);
+    [super touchesCancelled:touches withEvent:event];
+}
+
+- (void)touchesEnded:(NSSet&lt;UITouch *&gt; *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);
+    [super touchesEnded:touches withEvent:event];
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F24D5777-35DD-4B10-83BC-73D55C5E11CB</string>

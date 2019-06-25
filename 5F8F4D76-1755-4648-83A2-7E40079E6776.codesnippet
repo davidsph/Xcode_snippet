@@ -3,27 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ismain</string>
+	<string>strong</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> if ([NSThread isMainThread]) {
-        NSLog(@"是主线程");
-    } else{
-        
-        NSLog(@"不是主线程");
-    }
-</string>
+	<string>__strong typeof(self) strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59A9E79C-9952-43E7-9C2E-9E94048A0344</string>
+	<string>5F8F4D76-1755-4648-83A2-7E40079E6776</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>判断是否主线程</string>
+	<string>inside block 调用self多次。需要用到 strong,防止释放</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSThread 是否主线程</string>
+	<string>strong self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

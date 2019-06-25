@@ -3,27 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ismain</string>
+	<string>pushvc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> if ([NSThread isMainThread]) {
-        NSLog(@"是主线程");
-    } else{
-        
-        NSLog(@"不是主线程");
-    }
-</string>
+	<string>[self.navigationController pushViewController:&lt;#VC#&gt; animated:YES];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59A9E79C-9952-43E7-9C2E-9E94048A0344</string>
+	<string>B8072B28-5391-4F8A-A13B-114BADECB60A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>判断是否主线程</string>
+	<string>navigation push vc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSThread 是否主线程</string>
+	<string>push VC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

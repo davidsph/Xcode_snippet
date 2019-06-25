@@ -3,27 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ismain</string>
+	<string>iii</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> if ([NSThread isMainThread]) {
-        NSLog(@"是主线程");
-    } else{
-        
-        NSLog(@"不是主线程");
-    }
-</string>
+	<string>#import "&lt;#header#&gt;"</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59A9E79C-9952-43E7-9C2E-9E94048A0344</string>
+	<string>542C1A9E-8507-4962-98B9-116A1DA1E361</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>判断是否主线程</string>
+	<string>Xcode.SourceCodeLanguage.C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSThread 是否主线程</string>
+	<string>头文件引用 #import "&lt;#header#&gt;"</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
